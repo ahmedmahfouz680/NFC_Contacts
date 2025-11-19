@@ -1,9 +1,15 @@
+<!-- Simple contact page for QR code sharing
+     Replace the placeholder image and contact details with your own.
+     Save this file as index.html and host it (GitHub Pages, Netlify, etc.)
+     Then generate a QR code that points to the page URL.
+-->
+
 <!doctype html>
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contacts</title>
+  <title>Contact Page</title>
   <style>
     :root{--bg:#f7f7fb;--card:#ffffff;--muted:#6b7280;--accent:#2563eb}
     *{box-sizing:border-box}
@@ -18,7 +24,7 @@
     .item{display:flex;gap:12px;align-items:center;padding:10px;border-radius:10px;border:1px solid #eef2ff}
     .item .icon{width:36px;height:36px;display:inline-flex;align-items:center;justify-content:center;border-radius:8px;background:#f1f5f9}
     .item .text{flex:1;text-align:left}
-    .item .text a{color:inherit;text-decoration:none;font-weight:600}
+    .item .text a{color:inherit;text-decoration:none;font-weight:600;word-break:break-all;overflow-wrap:anywhere;}
     .hint{color:var(--muted);font-size:0.9rem;margin-top:14px}
     footer{margin-top:18px;font-size:0.85rem;color:var(--muted)}
 
@@ -29,7 +35,8 @@
   <div class="wrap">
     <div class="card">
       <a class="avatar" href="#">
-        <img src="z.jpg" alt="Profile Image"/>
+        <!-- placeholder image: replace src with your image URL or data URI -->
+        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400'><rect width='100%' height='100%' fill='%23e6eefc'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%232256a8' font-family='Arial' font-size='28'>Your Image</text></svg>" alt="Profile Image"/>
       </a>
 
       <h1>Ahmed Mahfouz</h1>
@@ -48,16 +55,17 @@
 
         <div class="item">
           <div class="icon">🌐</div>
-          <div class="text"><a href="https://ahmedmahfouz680.github.io/Portfolio/" target="_blank" rel="noopener">Portfolio</a><div style="color:var(--muted);font-size:0.9rem">Website</div></div>
+          <div class="text"><a href="https://ahmedmahfouz680.github.io/Portfolio/" target="_blank" rel="noopener">https://ahmedmahfouz680.github.io/Portfolio/</a><div style="color:var(--muted);font-size:0.9rem">PortFolio</div></div>
         </div>
 
         <div class="item">
           <div class="icon">🔗</div>
-          <div class="text"><a href="https://www.linkedin.com/in/ahmedmahfouz680/" target="_blank" rel="noopener">Linkedin</a><div style="color:var(--muted);font-size:0.9rem">LinkedIn</div></div>
+          <div class="text"><a href="https://www.linkedin.com/in/ahmedmahfouz680/" target="_blank" rel="noopener">https://www.linkedin.com/in/ahmedmahfouz680/</a><div style="color:var(--muted);font-size:0.9rem">LinkedIn</div></div>
         </div>
       </div>
 
-      <footer></footer>
+      <p class="hint">Replace the text and image with your real details before uploading.</p>
+      <footer>After uploading: generate a QR code that points to this page link.</footer>
     </div>
   </div>
 </body>
