@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contacts</title>
+  <style>
+    :root{--bg:#f7f7fb;--card:#ffffff;--muted:#6b7280;--accent:#2563eb}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,'Segoe UI',Roboto; background:var(--bg); color:#111}
+    .wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px}
+    .card{background:var(--card);border-radius:16px;box-shadow:0 8px 24px rgba(2,6,23,0.08);max-width:420px;width:100%;padding:28px;text-align:center}
+    .avatar{width:140px;height:140px;border-radius:14px;overflow:hidden;margin:0 auto 18px;display:block}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    h1{font-size:1.35rem;margin:6px 0}
+    p.role{color:var(--muted);margin:0 0 18px}
+    .contacts{display:grid;gap:10px;margin-top:6px}
+    .item{display:flex;gap:12px;align-items:center;padding:10px;border-radius:10px;border:1px solid #eef2ff}
+    .item .icon{width:36px;height:36px;display:inline-flex;align-items:center;justify-content:center;border-radius:8px;background:#f1f5f9}
+    .item .text{flex:1;text-align:left}
+    .item .text a{color:inherit;text-decoration:none;font-weight:600}
+    .hint{color:var(--muted);font-size:0.9rem;margin-top:14px}
+    footer{margin-top:18px;font-size:0.85rem;color:var(--muted)}
+
+    @media (max-width:480px){.card{padding:20px}.avatar{width:120px;height:120px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <a class="avatar" href="#">
+        <img src="z.jpg" alt="Profile Image"/>
+      </a>
+
+      <h1>Ahmed Mahfouz</h1>
+      <p class="role">Junior Network Engineer</p>
+
+      <div class="contacts">
+        <div class="item">
+          <div class="icon">📞</div>
+          <div class="text"><a href="tel:+201108511453">+20 1108511453</a><div style="color:var(--muted);font-size:0.9rem">Phone</div></div>
+        </div>
+
+        <div class="item">
+          <div class="icon">✉️</div>
+          <div class="text"><a href="mailto:ahmedmahfouz680@gmail.com">ahmedmahfouz680@gmail.com</a><div style="color:var(--muted);font-size:0.9rem">Email</div></div>
+        </div>
+
+        <div class="item">
+          <div class="icon">🌐</div>
+          <div class="text"><a href="https://ahmedmahfouz680.github.io/Portfolio/" target="_blank" rel="noopener">Portfolio</a><div style="color:var(--muted);font-size:0.9rem">Website</div></div>
+        </div>
+
+        <div class="item">
+          <div class="icon">🔗</div>
+          <div class="text"><a href="https://www.linkedin.com/in/ahmedmahfouz680/" target="_blank" rel="noopener">Linkedin</a><div style="color:var(--muted);font-size:0.9rem">LinkedIn</div></div>
+        </div>
+      </div>
+
+      <footer></footer>
+    </div>
+  </div>
+</body>
+</html>
