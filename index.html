@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahmed Mahfouz - Network Engineer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,6 +17,7 @@
             margin: 0;
             color: #eee;
         }
+
         .card {
             background: #2c2c2c;
             border-radius: 15px;
@@ -24,6 +26,7 @@
             padding: 30px;
             text-align: center;
         }
+
         .avatar {
             width: 100px;
             height: 100px;
@@ -32,14 +35,17 @@
             object-fit: cover;
             border: 3px solid #007bff;
         }
+
         h2 {
             margin: 10px 0 5px 0;
             color: #007bff;
         }
+
         p.title {
             margin: 5px 0 20px 0;
             font-weight: bold;
         }
+
         .contact {
             display: flex;
             align-items: center;
@@ -50,96 +56,103 @@
             background: #3a3a3a;
             border-radius: 10px;
             transition: background 0.3s;
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
         }
+
         .contact:hover {
             background: #007bff;
         }
-        .contact:hover a, .contact:hover i {
+
+        .contact:hover i,
+        .contact:hover span {
             color: #fff;
         }
+
         .contact i {
             color: #007bff;
             min-width: 20px;
             transition: color 0.3s;
         }
-        .contact a {
-            text-decoration: none;
-            color: #eee;
+
+        .contact span {
             font-weight: bold;
             transition: color 0.3s;
         }
-        .qr-code {
-            margin-top: 20px;
-        }
+
         .portfolio {
             margin-top: 20px;
             background: #3a3a3a;
             padding: 12px;
             border-radius: 10px;
             transition: background 0.3s;
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
         }
+
         .portfolio:hover {
             background: #007bff;
         }
-        .portfolio a {
-            text-decoration: none;
-            color: #eee;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        .portfolio:hover a {
+
+        .portfolio:hover {
             color: #fff;
         }
-            /* Responsive Design */
+
         @media (max-width: 480px) {
             body {
                 padding: 20px;
                 height: auto;
             }
+
             .card {
                 width: 100%;
                 padding: 20px;
             }
-            .contact, .portfolio {
-                flex-direction: row;
-                justify-content: flex-start;
-                padding: 12px;
-            }
+
             h2 {
                 font-size: 1.4rem;
             }
+
             p.title {
                 font-size: 0.95rem;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="card">
         <img src="z.jpg" alt="Ahmed Mahfouz" class="avatar">
+
         <h2>Ahmed Mahfouz</h2>
         <p class="title">Junior Network Engineer</p>
 
-        <div class="contact">
+        <a class="contact" href="tel:+201108511453">
             <i class="fas fa-phone"></i>
-            <a href="tel:+201108511453">+20 1108511453</a>
-        </div>
-        <div class="contact">
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:ahmedmahfouz680@gmail.com">ahmedmahfouz680@gmail.com</a>
-        </div>
-        <div class="contact">
-            <i class="fab fa-linkedin"></i>
-            <a href="https://www.linkedin.com/in/ahmedmahfouz680/" target="_blank">LinkedIn</a>
-        </div>
-        <div class="contact">
-            <i class="fab fa-whatsapp"></i>
-            <a href="https://wa.me/201108511453" target="_blank">WhatsApp</a>
-        </div>
+            <span>+20 1108511453</span>
+        </a>
 
-        <div class="portfolio">
-            <a href="https://ahmedmahfouz680.github.io/Portfolio/" target="_blank"><i class="fas fa-briefcase"></i>  View Portfolio</a>
-        </div>
+        <a class="contact" href="mailto:ahmedmahfouz680@gmail.com">
+            <i class="fas fa-envelope"></i>
+            <span>ahmedmahfouz680@gmail.com</span>
+        </a>
+
+        <a class="contact" href="https://www.linkedin.com/in/ahmedmahfouz680/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+        </a>
+
+        <a class="contact" href="https://wa.me/201108511453" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+        </a>
+
+        <a class="portfolio" href="https://ahmedmahfouz680.github.io/Portfolio/" target="_blank">
+            <i class="fas fa-briefcase"></i> View Portfolio
+        </a>
     </div>
 </body>
 </html>
